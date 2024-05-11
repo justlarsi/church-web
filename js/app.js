@@ -3,7 +3,6 @@ document.addEventListener("DOMContentLoaded", function() {
     element.classList.add('show');
   });
 
-
  // FOR BANNER
   const bannerText = document.querySelector('.banner h1');
   setTimeout(() => {
@@ -32,3 +31,31 @@ document.addEventListener("DOMContentLoaded", function() {
     }
   });
 });
+
+// HOMEPAGE SCROLL TO TOP
+document.getElementById('refreshLink').addEventListener('click', function(event) {
+    event.preventDefault();
+    // window.location.reload();
+    window.scrollTo(-100000, 0);
+});
+
+
+  // NAVIGATION
+    function goToHomePage() {
+    window.location.href="index.html";
+    }
+    function goToAboutPage() {
+    window.location.href="about.html";
+    }
+    function goToEventsPage() {
+    window.location.href="events.html";
+  }
+    function goToVisitPage() {
+    window.location.href="visit.html";
+  }
+    function goToMinistriesPage() {
+    window.location.href="ministries.html";
+  }
+    function goToSermonPage() {
+    window.location.href="sermons.html";
+  }

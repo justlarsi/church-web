@@ -1,0 +1,132 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport"
+        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="/css/style.css">
+  <title>Visit Us</title>
+</head>
+<body>
+<header style="
+  background-image: url('img/225279164_1123094198094207_7560355246112942030_n.jpg');
+  background-color: rgba(0, 0, 0, 0.5);
+  background-repeat: no-repeat;
+  background-size: cover">
+  <nav class="navigation">
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="events.html">Events</a></li>
+      <li><a href="visit.html">Visit</a></li>
+      <li class="dropdown">
+        <a href="#" class="dropbtn">More</a>
+        <div class="dropdown-content">
+          <a href="ministries.html">Ministries</a>
+          <a href="sermons.html">Sermons</a>
+        </div>
+      </li>
+    </ul>
+  </nav>
+<div class="text">
+    <h2>VISIT US</h2>
+    <p> Visit us at AIC Section 58. We are located in Section 58, Nakuru, Kenya.
+      Whether you're just starting your faith journey, looking for a new church home,
+      or curious to learn more about Christianity, you're welcome here.
+    </p>
+  </div>
+
+</header>
+<main>
+
+
+<!-- ........................................... MAP DIV................................................................-->
+<section class="visit-maps">
+  <div class="visit-location">
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3989.770805907629!2d36.09686717496457!3d-0.2796238997176251!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x18299382df7eed7b%3A0xe9e2ed58ee90891!2sAIC%20Section%2058!5e0!3m2!1sen!2ske!4v1714067033151!5m2!1sen!2ske"
+              width="600" height="450" style="border:1;"
+              allowfullscreen="" loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade">
+          </iframe>
+</div>
+  <div class="visit-text">
+    <p>
+      Sunday from 8:30am to 5:00pm <br>
+      Saturday from 10:00am to 1:00pm <br>
+      Monday from 10:30am to 12:30pm <br>
+      Tuesday from 10:30am to 12:30pm <br>
+      Wednesday from 10:30am to 12:30pm <br>
+      Thursday from 10:30am to 12:30pm <br>
+      Friday from 10:30am to 12:30pm <br>
+    </p>
+  </div>
+</section>
+
+
+<!--..........................................FORM DIV..................................................................-->
+<section class="contact">
+  <p style="text-align: center;font-family: 'Segoe UI Black';font-size: 35px">
+    TALK TO US <br>
+    <h4 style="text-align: center"> Have a question? Email us</h4>
+
+  <form
+  action="https://formspree.io/f/mpzvbenv"
+  method="POST">
+    <div id="contact-form">
+      <form id="email-form">
+        <label for="name">Your Name:</label>
+        <input type="text" id="name" name="name" required>
+        <label for="email">Your Email:</label>
+        <input type="email" id="email" name="email" required>
+        <label for="message">Message:</label>
+        <textarea id="message" name="message" rows="4" required></textarea>
+        <button type="submit">Send Email</button>
+        <div id="success-message" style="display: none;"></div>
+
+    </form>
+    </div>
+    </form>
+</section>
+  <footer>
+  </footer>
+  </main>
+
+
+<script src="/js/app.js"></script>
+</body>
+</html>
+
+<script src="https://formspree.io/js/formbutton-v1.min.js" defer></script>
+<script>
+  window.formbutton=window.formbutton||function(){(formbutton.q=formbutton.q||[]).push(arguments)};
+  formbutton("create", {
+    action: "https://formspree.io/f/mpzvbenv",
+    title: "How can we help?",
+    fields: [
+      {
+        type: "email",
+        label: "Email:",
+        name: "email",
+        required: true,
+        placeholder: "your@email.com"
+      },
+      {
+        type: "textarea",
+        label: "Message:",
+        name: "message",
+        placeholder: "What's on your mind?",
+      },
+      { type: "submit" }
+    ],
+    styles: {
+      title: {
+        backgroundColor: "gray"
+      },
+      button: {
+        backgroundColor: "gray"
+      }
+    }
+  });
+</script>
+
