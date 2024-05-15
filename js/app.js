@@ -59,3 +59,6 @@ document.getElementById('refreshLink').addEventListener('click', function(event)
     function goToSermonPage() {
     window.location.href="sermons.html";
   }
+    function goToGivePage() {
+    window.location.href="give.html";
+  }

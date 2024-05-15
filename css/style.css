@@ -16,12 +16,22 @@ body {
 
 /*.............................................FOR NAVBAR*......................................................................*/
 header {
-  background: rgba(0, 0, 0, 0.3);
+  /*background: rgba(0, 0, 0, 0.3);*/
   position: relative;
   width: 100%;
   height: 100vh;
   overflow: hidden;
   padding: 10px 0
+}
+.logo {
+  opacity: 80%;
+  position: absolute;
+  left: 20px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+.logo:hover{
+  opacity:1;
 }
 .navigation {
   display: flex;
@@ -38,19 +48,33 @@ header {
 .navigation:hover{
   background-color: rgba(0, 0, 0, 0.7);
   transform: translateY(0.5px);
-  transition:
-    opacity 1s ease-in, opacity 1s ease-out, transform 1s ease-out, background-color 0.3s ease-in, background-color 0.3s ease-out;
+  transition: opacity 1s ease-in, opacity 1s ease-out, transform 1s ease-out, background-color 0.3s ease-in, background-color 0.3s ease-out;
+  .logo{
+    opacity: 1;
+  }
+  .dropdown{
+    opacity: 1;
+  }
+  .nav-top{
+    opacity: 1;
+  }
+  .give-button{
+    opacity: 1;
+  }
 }
 .navigation ul {
   list-style-type: none;
   margin: 0;
-  padding: 0;
+  padding: 0 0 0 100px;
   display: flex;
   justify-content: space-evenly;
 }
 .navigation ul li {
   display: inline;
   margin-right: 20px;
+}
+.nav-top{
+  opacity: 80%;
 }
 .navigation ul li a {
   color: #fff;
@@ -67,10 +91,12 @@ header {
   border-radius: 5px;
   transform: scale(1.1);
   font-weight: bold;
+  opacity: 1;
   transition: background-color 0.3s ease;
 }
 .dropdown {
   position: relative;
+  opacity: 80%;
 }
 .dropdown-content {
   display: none;
@@ -90,6 +116,9 @@ header {
 }
 .dropdown:hover .dropdown-content {
   display: block;
+}
+.give-button{
+  opacity: 80%;
 }
 
 /*................................................FOR FIRST PAGE...................................................................................*/
@@ -713,4 +742,44 @@ footer {
   color: #666;
   padding-bottom: 30px;
 
+}
+ /*...............................GIVE PAGE*/
+
+.give {
+  margin: 20px;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.give h2 {
+  margin-bottom: 10px;
+}
+
+.give div {
+  margin-bottom: 10px;
+}
+
+.give label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+.give select {
+  width: 100%;
+  padding: 5px;
+  border-radius: 5px;
+}
+
+.give button {
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.give button:hover {
+  background-color: #0056b3;
 }
